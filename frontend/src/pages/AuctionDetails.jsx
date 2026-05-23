@@ -373,6 +373,7 @@ function InfoCard({ title, value, icon }) {
                 </div>
             </div>
         </div>
+
     );
 }
 
