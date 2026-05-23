@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+
+  backend:
+    build: ./backend
+    container_name: auction-backend-container
+    ports:
+      - "5005:5005"
+
+  frontend:
+    build: ./frontend
+    container_name: auction-frontend-container
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
